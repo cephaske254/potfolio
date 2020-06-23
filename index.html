@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/all.css">
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+    <title>Cephas Ke</title>
+</head>
+
+<body>
+    <div id="top">
+        <div class="container">
+            <div id="brand">
+                <span id="brand_name">Cephas Too</span>
+                <span id="hamburger">&#9776;</span>
+                <span id="close_menu">&times;</span>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li>My Bio</li>
+                    <li>My Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="landing_outer">
+        <div id="landing" class="container">
+            <div id="socials">
+                <a href="" class="fa fa-envelope"></a>
+                <a href="" class="fab fa-github"></a>
+                <a href="" class="fab fa-facebook"></a>
+                <a href="" class="fab fa-linkedin"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-whatsapp"></a>
+            </div>
+
+            <h3>Give your users the experience they deserve.</h3>
+            <p>An amazing design and me is all you need.</p>
+            <a>My Projects</a>
+        </div>
+
+    </div>
+    <div id="about_me_outer">
+        <div id="about_me" class="container">
+            <div id="about_me_intro">
+                <div id="me_image"></div>
+                <div id="who_am_i">
+                    <p>And Who Am I ... ?</p>
+                    <p>Here is all about me</p>
+                </div>
+            </div>
+            <p>
+                Cephas K.Too is my name as you may have guessed. The best title for me would be a FullStack Web Developer. My web development journey began
+                with being a self-taught developer which raised need for skills improvement and therefore i joined Moringa School for Software Engineering.
+            </p>
+            <p>
+                I have skills and experience in the following languages, frameworks and libraries.
+            <ul>
+                <li>HTML, CSS & Javascript.</li>
+                <li>PHP</li>
+                <li>Flask, Django, Bootstrap.</li>
+                <li>Jquery.</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <div id="merits_container">
+        <div class="container">
+            <h4>Merit ...</h4>
+            <div id="merits">
+                <div class="merit">
+                    <p class="title">Fancy User Interface </br> Designs</p>
+                    <div class="image">
+                        <img src="static/images/ui.png">
+                    </div>
+                </div>
+                <div class="merit">
+                    <p class="title">Great User Experience </br> Designs</p>
+                    <div class="image">
+                        <img src="static/images/ui.png">
+                    </div>
+                </div>
+                <div class="merit">
+                    <p class="title">On time </br>Delivery</p>
+                    <div class="image">
+                        <img src="static/images/ui.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects_overview">
+        <div><span class="h4">Recent Projects</span> <a href="https://github.com/cephaske254" id="view_all">View all</a></div>
+
+        <div id="projects">
+            <div class="project">
+                <p class="title">Instagram Clone</p>
+                <a href="https://igee-clone.herokuapp.com" class="btn btn-info">View</a>
+            </div>
+            <div class="project">
+                <p class="title">UX Grading App</p>
+                <a href="https://grade-it.herokuapp.com" class="btn btn-info">View</a>
+            </div>
+            <div class="project">
+                <p class="title">Parking Management</p>
+                <a href="https://p-zone-app.herokuapp.com" class="btn btn-info">View</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navigation = document.getElementById("navigation");
+    const close_menu = document.getElementById("close_menu");
+
+    hamburger.addEventListener("click", function () {
+        navigation.style = "display : block";
+        hamburger.style = "display : none";
+        close_menu.style = "display : inline-block";
+    });
+
+    close_menu.addEventListener("click", function () {
+        navigation.style = "display : none";
+        close_menu.style = "display : none";
+        hamburger.style = "display : inline-block";
+    });
+
+</script>
+
+</html>
